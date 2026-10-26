@@ -1,22 +1,13 @@
-# After Dark FC — website prototype
+# After Dark FC — Version 3
 
-A mobile-friendly, static interactive teamsheet for After Dark FC 27 Pro Clubs.
+Upload `index.html` to the root of `NikkiMoonXO/after-dark-fc` and upload **all** files inside `assets/` to the repository's `assets/` directory, replacing existing versions.
 
-## Features
-- Five tactical formations and an 11-position pitch
-- Clickable football shirts and provisional player claims
-- Browser-local persistence, so claims survive refresh on the same device
-- Responsive club dashboard using the official After Dark crest
-- Home, Fixtures, Teamsheets, Squad, Results pages
+Version 3 includes:
+- Night stadium skyline banner with the club crest
+- Full-pitch grass texture and markings
+- Visible football shirt SVG images, numbers, and clickable position labels
+- Five formations, local demo claims, release, navigation, responsive layouts
 
-## IMPORTANT
-This is a **prototype**. No Discord login, Discord server role verification, shared database, manager permissions, or realtime synchronization is connected yet. The Discord button is intentionally disabled with an informational message. Browser-local claims are not secure and must never be treated as real match selections.
+IMPORTANT: Demo claims are stored in the browser only. Discord login, manager approval, shared fixture storage and permissions are NOT implemented. No real users should rely on these demo claims.
 
-## GitHub Pages setup
-Upload `index.html` and `assets/crest.png` to the repository main branch. In repository **Settings > Pages**, choose **Deploy from a branch**, select `main`, folder `/ (root)`, then save. The eventual site address is `https://NikkiMoonXO.github.io/after-dark-fc/`.
-
-## Next development phase
-- Supabase auth with Discord OAuth2
-- Secure Discord membership and role verification through server-side functions
-- Postgres tables for fixtures, player profiles, provisional claims and confirmed selections
-- Row-level security, atomic claim insertion, and role-protected manager actions
+If the old page persists after deployment, hard-refresh (Ctrl+F5).
